@@ -20,17 +20,10 @@ public class MyPasswordAuthenticationToken extends OAuth2AuthorizationGrantAuthe
     private String password;
     private Set<String> scopes;
 
-    /**
-     * Sub-class constructor.
-     *
-     * @param authorizationGrantType the authorization grant type
-     * @param clientPrincipal        the authenticated client principal
-     * @param additionalParameters   the additional parameters
-     */
-    protected MyPasswordAuthenticationToken(AuthorizationGrantType authorizationGrantType,
-                                            Authentication clientPrincipal,
-                                            @Nullable Map<String, Object> additionalParameters,
-                                            @Nullable Set<String> scopes) {
+    protected MyPasswordAuthenticationToken(
+            Authentication clientPrincipal,
+            @Nullable Map<String, Object> additionalParameters,
+            @Nullable Set<String> scopes) {
 
         super(new AuthorizationGrantType("password"),
                 clientPrincipal,
@@ -42,4 +35,5 @@ public class MyPasswordAuthenticationToken extends OAuth2AuthorizationGrantAuthe
                 .unmodifiableSet(scopes!=null ? new HashSet<>(scopes) : Collections.emptySet());
 
     }
+
 }
