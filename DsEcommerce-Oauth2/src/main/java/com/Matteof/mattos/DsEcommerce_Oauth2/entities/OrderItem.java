@@ -4,6 +4,7 @@ import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.Objects;
@@ -11,6 +12,7 @@ import java.util.Objects;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
 @Table(name = "tb_order_item")
 public class OrderItem {
 
@@ -20,9 +22,6 @@ public class OrderItem {
     private Integer quantity;
     private Double price;
 
-    public OrderItem() {
-    }
-
     public OrderItem(Order order, Product product, Integer quantity, Double price) {
         id.setOrder(order);
         id.setProduct(product);
@@ -30,13 +29,18 @@ public class OrderItem {
         this.price = price;
     }
 
+    public Order getOrder() {
+        return id.getOrder();
+    }
+
     @Override
     public boolean equals(Object o) {
+
         if (this == o) return true;
+
         if (o == null || getClass() != o.getClass()) return false;
 
         OrderItem orderItem = (OrderItem) o;
-
         return Objects.equals(id, orderItem.id);
     }
 

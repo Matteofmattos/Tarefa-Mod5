@@ -4,18 +4,16 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
 import java.time.Instant;
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
-
-@Getter
 @Setter
-@NoArgsConstructor
+@Getter
 @Entity
-@Table(name = "tb_order")
-public class Order {
+@NoArgsConstructor
+@Table(name = "tb_payment")
+public class Payment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,24 +22,14 @@ public class Order {
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant moment;
 
-    private OrderStatus status;
+    @OneToOne
+    @MapsId
+    private Order order;
 
-    @ManyToOne
-    @JoinColumn(name = "client_id")
-    private User client;
-
-    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
-    private Payment payment;
-
-    @OneToMany(mappedBy = "id.order")
-    private Set<OrderItem> items = new HashSet<>();
-
-    public Order(Long id, Instant moment, OrderStatus status, User client, Payment payment) {
+    public Payment(Long id, Instant moment, Order order) {
         this.id = id;
         this.moment = moment;
-        this.status = status;
-        this.client = client;
-        this.payment = payment;
+        this.order = order;
     }
 
     @Override
@@ -49,9 +37,9 @@ public class Order {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Order order = (Order) o;
+        Payment payment = (Payment) o;
 
-        return Objects.equals(id, order.id);
+        return Objects.equals(id, payment.id);
     }
 
     @Override
