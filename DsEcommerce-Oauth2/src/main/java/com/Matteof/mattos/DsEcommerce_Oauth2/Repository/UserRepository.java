@@ -1,9 +1,9 @@
 package com.Matteof.mattos.DsEcommerce_Oauth2.Repository;
 
 import com.Matteof.mattos.DsEcommerce_Oauth2.Projections.UserDetailsProjection;
+import com.Matteof.mattos.DsEcommerce_Oauth2.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.Matteof.mattos.DsEcommerce_Oauth2.Dto;
 
-import com.Matteof.mattos.DsEcommerce_Oauth2.Entities.User;
+import com.Matteof.mattos.DsEcommerce_Oauth2.entities.User;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
