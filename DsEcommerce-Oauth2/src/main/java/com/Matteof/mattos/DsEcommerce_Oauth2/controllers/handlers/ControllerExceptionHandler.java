@@ -1,10 +1,10 @@
 package com.Matteof.mattos.DsEcommerce_Oauth2.controllers.handlers;
 
-import com.devsuperior.dscommerce.dto.CustomErrorDTO;
-import com.devsuperior.dscommerce.dto.ValidationErrorDTO;
-import com.devsuperior.dscommerce.services.exceptions.DatabaseException;
-import com.devsuperior.dscommerce.services.exceptions.ForbiddenException;
-import com.devsuperior.dscommerce.services.exceptions.ResourceNotFoundException;
+import com.Matteof.mattos.DsEcommerce_Oauth2.dto.CustomErrorDTO;
+import com.Matteof.mattos.DsEcommerce_Oauth2.dto.ValidationErrorDTO;
+import com.Matteof.mattos.DsEcommerce_Oauth2.service.exceptions.DatabaseException;
+import com.Matteof.mattos.DsEcommerce_Oauth2.service.exceptions.ForbiddenException;
+import com.Matteof.mattos.DsEcommerce_Oauth2.service.exceptions.ResourceNotFoundException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

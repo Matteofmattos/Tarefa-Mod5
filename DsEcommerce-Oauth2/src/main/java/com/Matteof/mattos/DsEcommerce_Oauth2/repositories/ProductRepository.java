@@ -1,6 +1,6 @@
 package com.Matteof.mattos.DsEcommerce_Oauth2.repositories;
 
-import com.devsuperior.dscommerce.entities.Product;
+import com.Matteof.mattos.DsEcommerce_Oauth2.entities.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,7 +1,7 @@
 package com.Matteof.mattos.DsEcommerce_Oauth2.service;
 
-import com.devsuperior.dscommerce.entities.User;
-import com.devsuperior.dscommerce.services.exceptions.ForbiddenException;
+import com.Matteof.mattos.DsEcommerce_Oauth2.entities.User;
+import com.Matteof.mattos.DsEcommerce_Oauth2.service.exceptions.ForbiddenException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

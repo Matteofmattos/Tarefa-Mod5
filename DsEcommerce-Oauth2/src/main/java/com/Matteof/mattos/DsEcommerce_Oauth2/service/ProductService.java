@@ -1,13 +1,13 @@
 package com.Matteof.mattos.DsEcommerce_Oauth2.service;
 
-import com.devsuperior.dscommerce.dto.CategoryDTO;
-import com.devsuperior.dscommerce.dto.ProductDTO;
-import com.devsuperior.dscommerce.dto.ProductMinDTO;
-import com.devsuperior.dscommerce.entities.Category;
-import com.devsuperior.dscommerce.entities.Product;
-import com.devsuperior.dscommerce.repositories.ProductRepository;
-import com.devsuperior.dscommerce.services.exceptions.DatabaseException;
-import com.devsuperior.dscommerce.services.exceptions.ResourceNotFoundException;
+import com.Matteof.mattos.DsEcommerce_Oauth2.dto.CategoryDTO;
+import com.Matteof.mattos.DsEcommerce_Oauth2.dto.ProductDTO;
+import com.Matteof.mattos.DsEcommerce_Oauth2.dto.ProductMinDTO;
+import com.Matteof.mattos.DsEcommerce_Oauth2.entities.Category;
+import com.Matteof.mattos.DsEcommerce_Oauth2.entities.Product;
+import com.Matteof.mattos.DsEcommerce_Oauth2.repositories.ProductRepository;
+import com.Matteof.mattos.DsEcommerce_Oauth2.service.exceptions.DatabaseException;
+import com.Matteof.mattos.DsEcommerce_Oauth2.service.exceptions.ResourceNotFoundException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -33,7 +33,7 @@ public class ProductService {
     @Transactional(readOnly = true)
     public Page<ProductMinDTO> findAll(String name, Pageable pageable) {
         Page<Product> result = repository.searchByName(name, pageable);
-        return result.map(x -> new ProductMinDTO(x));
+        return result.map(ProductMinDTO::new);
     }
 
     @Transactional

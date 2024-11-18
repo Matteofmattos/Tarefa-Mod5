@@ -1,12 +1,12 @@
 package com.Matteof.mattos.DsEcommerce_Oauth2.service;
 
-import com.devsuperior.dscommerce.dto.OrderDTO;
-import com.devsuperior.dscommerce.dto.OrderItemDTO;
-import com.devsuperior.dscommerce.entities.*;
-import com.devsuperior.dscommerce.repositories.OrderItemRepository;
-import com.devsuperior.dscommerce.repositories.OrderRepository;
-import com.devsuperior.dscommerce.repositories.ProductRepository;
-import com.devsuperior.dscommerce.services.exceptions.ResourceNotFoundException;
+import com.Matteof.mattos.DsEcommerce_Oauth2.dto.OrderDTO;
+import com.Matteof.mattos.DsEcommerce_Oauth2.dto.OrderItemDTO;
+import com.Matteof.mattos.DsEcommerce_Oauth2.entities.*;
+import com.Matteof.mattos.DsEcommerce_Oauth2.repositories.OrderItemRepository;
+import com.Matteof.mattos.DsEcommerce_Oauth2.repositories.OrderRepository;
+import com.Matteof.mattos.DsEcommerce_Oauth2.repositories.ProductRepository;
+import com.Matteof.mattos.DsEcommerce_Oauth2.service.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

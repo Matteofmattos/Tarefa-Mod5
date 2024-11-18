@@ -2,12 +2,14 @@ package com.Matteof.mattos.DsEcommerce_Oauth2.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
 @Getter
+@Setter
 @Entity
 @Table(name = "tb_category")
 public class Category {
@@ -42,4 +44,5 @@ public class Category {
     public int hashCode() {
         return id != null ? id.hashCode() : 0;
     }
+
 }

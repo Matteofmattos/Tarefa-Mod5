@@ -1,8 +1,8 @@
 package com.Matteof.mattos.DsEcommerce_Oauth2.controllers;
 
-import com.devsuperior.dscommerce.dto.ProductDTO;
-import com.devsuperior.dscommerce.dto.ProductMinDTO;
-import com.devsuperior.dscommerce.services.ProductService;
+import com.Matteof.mattos.DsEcommerce_Oauth2.dto.ProductDTO;
+import com.Matteof.mattos.DsEcommerce_Oauth2.dto.ProductMinDTO;
+import com.Matteof.mattos.DsEcommerce_Oauth2.service.ProductService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

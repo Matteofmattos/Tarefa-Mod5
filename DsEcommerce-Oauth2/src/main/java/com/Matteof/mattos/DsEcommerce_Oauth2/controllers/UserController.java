@@ -1,7 +1,7 @@
 package com.Matteof.mattos.DsEcommerce_Oauth2.controllers;
 
-import com.devsuperior.dscommerce.dto.UserDTO;
-import com.devsuperior.dscommerce.services.UserService;
+import com.Matteof.mattos.DsEcommerce_Oauth2.dto.UserDTO;
+import com.Matteof.mattos.DsEcommerce_Oauth2.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;

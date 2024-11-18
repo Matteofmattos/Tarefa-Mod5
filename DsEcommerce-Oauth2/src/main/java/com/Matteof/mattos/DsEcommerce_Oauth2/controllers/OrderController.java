@@ -1,7 +1,8 @@
 package com.Matteof.mattos.DsEcommerce_Oauth2.controllers;
 
-import com.devsuperior.dscommerce.dto.OrderDTO;
-import com.devsuperior.dscommerce.services.OrderService;
+
+import com.Matteof.mattos.DsEcommerce_Oauth2.dto.OrderDTO;
+import com.Matteof.mattos.DsEcommerce_Oauth2.service.OrderService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

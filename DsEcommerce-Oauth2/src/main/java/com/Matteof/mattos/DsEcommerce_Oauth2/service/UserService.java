@@ -1,10 +1,10 @@
 package com.Matteof.mattos.DsEcommerce_Oauth2.service;
 
-import com.Matteof.mattos.DsEcommerce_Oauth2.Dto.UserDTO;
+import com.Matteof.mattos.DsEcommerce_Oauth2.dto.UserDTO;
 import com.Matteof.mattos.DsEcommerce_Oauth2.Projections.UserDetailsProjection;
-import com.Matteof.mattos.DsEcommerce_Oauth2.Repository.UserRepository;
 import com.Matteof.mattos.DsEcommerce_Oauth2.entities.Role;
 import com.Matteof.mattos.DsEcommerce_Oauth2.entities.User;
+import com.Matteof.mattos.DsEcommerce_Oauth2.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

@@ -1,7 +1,8 @@
 package com.Matteof.mattos.DsEcommerce_Oauth2.controllers;
 
-import com.devsuperior.dscommerce.dto.CategoryDTO;
-import com.devsuperior.dscommerce.services.CategoryService;
+
+import com.Matteof.mattos.DsEcommerce_Oauth2.dto.CategoryDTO;
+import com.Matteof.mattos.DsEcommerce_Oauth2.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
